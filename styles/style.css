@@ -209,6 +209,11 @@ Media Queries
     .course-container {
         margin-top: 21px;
     }
+
+    .course {
+        width: 252px;
+        height: auto;
+    }
 }
 
 /* Tablet Devices */
