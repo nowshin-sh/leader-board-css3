@@ -173,3 +173,71 @@ span {
 .fa-clock {
     padding-right: 5px;
 }
+
+/* -----------
+Media Queries
+-------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    body {
+        margin: 0px
+    }
+
+    .container {
+        width: 99%;
+        padding: 30px 0px;
+        margin: 0px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .course-container {
+        margin-top: 21px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    body {
+        margin: 0px
+    }
+
+    .container {
+        width: 99%;
+        padding: 30px 0px;
+        padding-left: 30px;
+        margin: 0px;
+    }
+
+    .course-container {
+        margin-top: 21px;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses {
+        justify-items: center;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+}
